@@ -4,7 +4,6 @@ package main
 import (
 	"math"
 
-	"github.com/bit101/bitlib/bllog"
 	"github.com/bit101/bitlib/blmath"
 	"github.com/bit101/bitlib/geom"
 	"github.com/bit101/bitlib/random"
@@ -16,9 +15,6 @@ import (
 //revive:disable:unused-parameter
 
 func main() {
-	bllog.InitProjectLog("project.log")
-	defer bllog.CloseLog()
-
 	renderTarget := target.Video
 
 	if renderTarget == target.Image {

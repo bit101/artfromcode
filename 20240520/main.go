@@ -4,7 +4,6 @@ package main
 import (
 	"math"
 
-	"github.com/bit101/bitlib/bllog"
 	"github.com/bit101/bitlib/blmath"
 	cairo "github.com/bit101/blcairo"
 	"github.com/bit101/blcairo/render"
@@ -19,9 +18,6 @@ const (
 )
 
 func main() {
-	bllog.InitProjectLog("project.log")
-	defer bllog.CloseLog()
-
 	renderTarget := target.Video
 
 	if renderTarget == target.Image {

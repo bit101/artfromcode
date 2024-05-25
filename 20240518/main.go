@@ -2,7 +2,6 @@
 package main
 
 import (
-	"github.com/bit101/bitlib/bllog"
 	"github.com/bit101/bitlib/blmath"
 	cairo "github.com/bit101/blcairo"
 	"github.com/bit101/blcairo/render"
@@ -13,9 +12,6 @@ import (
 //revive:disable:unused-parameter
 
 func main() {
-	bllog.InitProjectLog("project.log")
-	defer bllog.CloseLog()
-
 	renderTarget := target.Video
 
 	if renderTarget == target.Image {
