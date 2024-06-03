@@ -1,0 +1,5 @@
+#!/bin/sh
+go get github.com/bit101/blcairo
+go get github.com/bit101/bitlib
+go get github.com/bit101/go-ansi
+go get github.com/bit101/wire
