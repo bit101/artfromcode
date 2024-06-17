@@ -1,0 +1,10 @@
+#!/bin/sh
+# day=basename "$PWD"
+day=${PWD##*/}
+
+convert "./out/frames/frame_$1.png" -resize x100 ./out/thumb.png
+mkdir ../../media/$day
+cp ./out/*.mp4 ../../media/$day
+cp ./out/thumb.png ../../media/$day
+
+cd ../../media && ./img_deploy
